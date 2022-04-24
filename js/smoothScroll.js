@@ -4,7 +4,6 @@ const links = navBar.querySelectorAll("a");
 links.forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
-
     const section = document.querySelector(link.getAttribute("href"));
 
     if (section) {
@@ -15,7 +14,7 @@ links.forEach((link) => {
       // });
 
       //делаем scrollIntoView кроссбраузерным с помощью библиотеки seamless-scroll-polyfill
-      seamless.scrollIntoView(document.querySelector(section), {
+      seamless.scrollIntoView(section, {
         behavior: "smooth",
         block: "center",
         inline: "center",
