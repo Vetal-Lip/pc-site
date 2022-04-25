@@ -14,7 +14,7 @@ modalBtn.addEventListener("click", () => {
 
 modal.addEventListener("click", (event) => {
   const modalContent = event.target.closest(".modal__inner");
-  console.log(modalContent);
+
   if (!modalContent) {
     modal.style.display = "";
   }
