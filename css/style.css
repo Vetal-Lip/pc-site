@@ -678,6 +678,10 @@ progress::-moz-progress-value {
 }
 /*конец стили крестика закрытия модального окна */
 
+.color--red{
+    color: red;
+}
+
 
 /*сетка*/
 @media (max-width: 108em) {
